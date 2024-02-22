@@ -6,7 +6,7 @@ const Profile = () => {
 
   const handleLogout = async ()=> {
     try {
-      await fetch('https://simpleauthbackend.onrender.com/logout', { credentials: 'include' } )
+      await fetch('http://localhost:5000/logout', { credentials: 'include' } )
       localStorage.clear();
       navigate('/signup')
     } catch(err) {
